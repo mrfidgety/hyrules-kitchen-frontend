@@ -1,0 +1,8 @@
+<PowerSelect
+  @options={{@ingredients}}
+  @selected={{this.selectedIngredient}}
+  @onChange={{fn (mut this.selectedIngredient)}}
+  @searchEnabled={{true}}
+  @searchField="name" as |ingredient|>
+  <strong>{{ingredient.name}}</strong>
+</PowerSelect>
